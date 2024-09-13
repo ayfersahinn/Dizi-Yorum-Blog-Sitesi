@@ -57,7 +57,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <span class="menu"></span>
                 <ul>
                     <li class="active"><a href="Default.aspx">ANASAYFA</a></li>
-                    <li><a href="about.html">HAKKIMIZDA</a></li>
+                    <li><a href="hakkimizda.aspx">HAKKIMIZDA</a></li>
                     <li><a href="contact.html">İLETİŞİM</a></li>
                     
                 </ul>
