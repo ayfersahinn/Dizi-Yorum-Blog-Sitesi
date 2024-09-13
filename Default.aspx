@@ -8,11 +8,11 @@
                     <ItemTemplate>
                         <div class="content-grid">
                             <div class="content-grid-info ">
-                                <img src="<%# Eval("BLOGGORSEL")  %>" alt="" width="300" style="display: block; margin-left: auto; margin-right: auto;" />
+                                <img src="<%# Eval("BLOGGORSEL")  %>" alt="" width="300" style="display: block; margin-left: auto; margin-right: auto" />
                                 <div class="post-info">
-                                    <h4><a href="single.html"><%# Eval("BLOGBASLIK")%></a> <%# Eval("BLOGTARIH")  %></h4>
+                                    <h4><a href="blogDetay.aspx?BLOGID=<%# Eval("BLOGID") %>"><%# Eval("BLOGBASLIK")%></a> <%# Eval("BLOGTARIH")  %></h4>
                                     <p><%# Eval("BLOGICERIK")  %></p>
-                                    <a href="single.html"><span></span>Devamını oku</a>
+                                    <a href="blogDetay.aspx?BLOGID=<%# Eval("BLOGID") %>"><span></span>Devamını oku</a>
                                 </div>
                             </div>
                         </div>

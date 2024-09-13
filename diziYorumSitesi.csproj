@@ -102,6 +102,7 @@
     <Content Include="js\move-top.js" />
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />
+    <Content Include="blogDetay.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="entity\Model1.Context.cs">
@@ -151,6 +152,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="blogDetay.aspx.cs">
+      <DependentUpon>blogDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blogDetay.aspx.designer.cs">
+      <DependentUpon>blogDetay.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

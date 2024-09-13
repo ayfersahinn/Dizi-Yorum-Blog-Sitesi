@@ -56,10 +56,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
                 <span class="menu"></span>
                 <ul>
-                    <li class="active"><a href="index.html">ANASAYFA</a></li>
+                    <li class="active"><a href="Default.aspx">ANASAYFA</a></li>
                     <li><a href="about.html">HAKKIMIZDA</a></li>
                     <li><a href="contact.html">İLETİŞİM</a></li>
-                    <div class="clearfix"></div>
+                    
                 </ul>
             </div>
             <div class="clearfix"></div>
