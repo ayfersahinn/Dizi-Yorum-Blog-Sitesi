@@ -75,6 +75,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\bloglar.aspx" />
+    <Content Include="admin\blogEkle.aspx" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\style.css" />
     <Content Include="entity\Model1.Context.tt">
@@ -107,6 +109,27 @@
     <Content Include="iletisim.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\bloglar.aspx.cs">
+      <DependentUpon>bloglar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\bloglar.aspx.designer.cs">
+      <DependentUpon>bloglar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\blogEkle.aspx.cs">
+      <DependentUpon>blogEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\blogEkle.aspx.designer.cs">
+      <DependentUpon>blogEkle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="entity\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -186,6 +209,7 @@
     <Content Include="entity\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="admin\admin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
