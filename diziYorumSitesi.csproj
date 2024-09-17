@@ -104,6 +104,7 @@
     <Content Include="Default.aspx" />
     <Content Include="blogDetay.aspx" />
     <Content Include="hakkimizda.aspx" />
+    <Content Include="iletisim.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="entity\Model1.Context.cs">
@@ -167,6 +168,13 @@
     </Compile>
     <Compile Include="hakkimizda.aspx.designer.cs">
       <DependentUpon>hakkimizda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iletisim.aspx.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iletisim.aspx.designer.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
