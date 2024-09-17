@@ -18,7 +18,8 @@
                     <td><%# Eval("BLOGTARIH")  %></td>
                     <td><%# Eval("BLOGTUR")  %></td>
                     <td><%# Eval("BLOGKATEGORI")  %></td>
-                    <td><a href="#" class="btn btn-danger">Sil</a></td>
+                    <td><asp:HyperLink ID="HyperLink1" NavigateUrl='<%# "blogSil.aspx?BLOGID=" + Eval("BLOGID")%> ' runat="server" class="btn btn-danger">Sil</asp:HyperLink></td>
+                    
                     <td><a href="#" class="btn btn-warning">Güncelle</a></td>
                 </tr>
             </ItemTemplate>
