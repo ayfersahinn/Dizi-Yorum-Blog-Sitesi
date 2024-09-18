@@ -13,13 +13,13 @@
          <ItemTemplate>
              <tr>
                  <td><%# Eval("YORUMID")  %></td>
-                 <td><%# Eval("KULLANICIADI")  %></td>
-                 <td><%# Eval("YORUMICERIK")  %></td>
-                 <td><%# Eval("BLOGBASLIK")  %></td>
+                 <td ><%# Eval("KULLANICIADI")  %></td>
+                 <td style=" word-break:break-word;"><%# Eval("YORUMICERIK")  %></td>
+                 <td ><%# Eval("BLOGBASLIK")  %></td>
                 
-                 <td><asp:HyperLink ID="HyperLink1" NavigateUrl='<%# "yorumSil.aspx?YORUMID=" + Eval("YORUMID")%> ' runat="server" class="btn btn-danger">Sil</asp:HyperLink></td>
+                 <td style="white-space: nowrap;"><asp:HyperLink ID="HyperLink1" NavigateUrl='<%# "yorumSil.aspx?YORUMID=" + Eval("YORUMID")%> ' runat="server" class="btn btn-danger">Sil</asp:HyperLink></td>
                  
-                 <td><asp:HyperLink ID="HyperLink2" NavigateUrl='<%# "yorumGuncelle.aspx?YORUMID=" + Eval("YORUMID")%> ' runat="server" class="btn btn-warning">Güncelle</asp:HyperLink></td>
+                 <td style="white-space: nowrap;"><asp:HyperLink ID="HyperLink2" NavigateUrl='<%# "yorumGuncelle.aspx?YORUMID=" + Eval("YORUMID")%> ' runat="server" class="btn btn-warning">Güncelle</asp:HyperLink></td>
              </tr>
          </ItemTemplate>
      </asp:Repeater>
