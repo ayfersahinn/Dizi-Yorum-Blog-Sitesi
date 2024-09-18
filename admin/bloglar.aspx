@@ -16,8 +16,8 @@
                     <td><%# Eval("BLOGID")  %></td>
                     <td><%# Eval("BLOGBASLIK")  %></td>
                     <td><%# Eval("BLOGTARIH")  %></td>
-                    <td><%# Eval("BLOGTUR")  %></td>
-                    <td><%# Eval("BLOGKATEGORI")  %></td>
+                    <td><%# Eval("TURAD")  %></td>
+                    <td><%# Eval("KATAD")  %></td>
                     <td><asp:HyperLink ID="HyperLink1" NavigateUrl='<%# "blogSil.aspx?BLOGID=" + Eval("BLOGID")%> ' runat="server" class="btn btn-danger">Sil</asp:HyperLink></td>
                     
                     <td><asp:HyperLink ID="HyperLink2" NavigateUrl='<%# "blogGuncelle.aspx?BLOGID=" + Eval("BLOGID")%> ' runat="server" class="btn btn-warning">Güncelle</asp:HyperLink></td>

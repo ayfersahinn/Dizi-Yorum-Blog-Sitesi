@@ -19,7 +19,7 @@
     </div>
     <ul class="nav navbar-nav">
       <li><a href="/admin/bloglar.aspx">Bloglar</a></li>
-      <li><a href="#">Yorumlar</a></li>
+      <li><a href="/admin/yorumlar.aspx">Yorumlar</a></li>
       <li><a href="#">Mesajlar</a></li>
       <li><a href="#">Hakkımızda</a></li>
     </ul>

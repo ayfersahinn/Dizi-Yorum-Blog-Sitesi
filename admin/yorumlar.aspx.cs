@@ -5,16 +5,15 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using diziYorumSitesi.entity;
-
 namespace diziYorumSitesi.admin
 {
-    public partial class bloglar : System.Web.UI.Page
+    public partial class yorumlar : System.Web.UI.Page
     {
         diziYorumEntities db = new diziYorumEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
-            var blogs = (from x in db.TBL_BLOG select new {x.BLOGID, x.BLOGBASLIK, x.BLOGTARIH, x.TBL_TUR.TURAD, x.TBL_KATEGORI.KATAD}).ToList();
-            Repeater1.DataSource = blogs;
+            var yorumlar = (from x in db.TBL_YORUMLAR select new {x.YORUMID, x.KULLANICIADI,x.YORUMICERIK, x.TBL_BLOG.BLOGBASLIK}).ToList();
+            Repeater1.DataSource = yorumlar;
             Repeater1.DataBind();
         }
     }
