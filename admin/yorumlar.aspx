@@ -24,5 +24,5 @@
          </ItemTemplate>
      </asp:Repeater>
  </table>
- <a href="blogEkle.aspx" class="btn btn-primary">Yeni Blog Ekle</a>
+ 
 </asp:Content>
