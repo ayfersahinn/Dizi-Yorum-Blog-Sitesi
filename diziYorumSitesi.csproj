@@ -78,6 +78,7 @@
     <Content Include="admin\bloglar.aspx" />
     <Content Include="admin\blogEkle.aspx" />
     <Content Include="admin\blogSil.aspx" />
+    <Content Include="admin\blogGuncelle.aspx" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\style.css" />
     <Content Include="entity\Model1.Context.tt">
@@ -137,6 +138,13 @@
     </Compile>
     <Compile Include="admin\blogSil.aspx.designer.cs">
       <DependentUpon>blogSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\blogGuncelle.aspx.cs">
+      <DependentUpon>blogGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\blogGuncelle.aspx.designer.cs">
+      <DependentUpon>blogGuncelle.aspx</DependentUpon>
     </Compile>
     <Compile Include="entity\Model1.Context.cs">
       <AutoGen>True</AutoGen>

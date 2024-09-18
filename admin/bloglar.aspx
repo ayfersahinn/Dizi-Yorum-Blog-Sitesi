@@ -20,7 +20,7 @@
                     <td><%# Eval("BLOGKATEGORI")  %></td>
                     <td><asp:HyperLink ID="HyperLink1" NavigateUrl='<%# "blogSil.aspx?BLOGID=" + Eval("BLOGID")%> ' runat="server" class="btn btn-danger">Sil</asp:HyperLink></td>
                     
-                    <td><a href="#" class="btn btn-warning">Güncelle</a></td>
+                    <td><asp:HyperLink ID="HyperLink2" NavigateUrl='<%# "blogGuncelle.aspx?BLOGID=" + Eval("BLOGID")%> ' runat="server" class="btn btn-warning">Güncelle</asp:HyperLink></td>
                 </tr>
             </ItemTemplate>
         </asp:Repeater>
