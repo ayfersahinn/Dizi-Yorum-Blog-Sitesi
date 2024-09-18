@@ -79,6 +79,7 @@
     <Content Include="admin\blogEkle.aspx" />
     <Content Include="admin\blogSil.aspx" />
     <Content Include="admin\blogGuncelle.aspx" />
+    <Content Include="admin\yorumGuncelle.aspx" />
     <Content Include="admin\yorumSil.aspx" />
     <Content Include="admin\yorumlar.aspx" />
     <Content Include="css\bootstrap.css" />
@@ -147,6 +148,13 @@
     </Compile>
     <Compile Include="admin\blogGuncelle.aspx.designer.cs">
       <DependentUpon>blogGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\yorumGuncelle.aspx.cs">
+      <DependentUpon>yorumGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\yorumGuncelle.aspx.designer.cs">
+      <DependentUpon>yorumGuncelle.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\yorumSil.aspx.cs">
       <DependentUpon>yorumSil.aspx</DependentUpon>
