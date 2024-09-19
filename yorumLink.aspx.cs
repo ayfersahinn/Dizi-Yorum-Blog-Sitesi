@@ -7,12 +7,14 @@ using System.Web.UI.WebControls;
 using diziYorumSitesi.entity;
 namespace diziYorumSitesi
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class yorumLink : System.Web.UI.Page
     {
         diziYorumEntities db = new diziYorumEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
-            var bloglar = db.TBL_BLOG.ToList();
+
+            int id = Convert.ToInt32(Request.QueryString["BLOGID"]);
+            var bloglar = db.TBL_BLOG.Where(x => x.BLOGID == id).ToList();
             Repeater1.DataSource = bloglar;
             Repeater1.DataBind();
 
@@ -20,11 +22,11 @@ namespace diziYorumSitesi
             Repeater2.DataSource = bloglar2;
             Repeater2.DataBind();
 
-            var bloglar3 = db.TBL_BLOG.Take(5).OrderByDescending(x=> x.BLOGID).ToList();
+            var bloglar3 = db.TBL_BLOG.Take(5).OrderByDescending(x => x.BLOGID).ToList();
             Repeater3.DataSource = bloglar3;
             Repeater3.DataBind();
 
-            var yorumlar = db.TBL_YORUMLAR.Take(3).OrderByDescending(x=> x.YORUMID).ToList();
+            var yorumlar = db.TBL_YORUMLAR.Take(3).OrderByDescending(x => x.YORUMID).ToList();
             Repeater4.DataSource = yorumlar;
             Repeater4.DataBind();
         }

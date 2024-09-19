@@ -11,7 +11,7 @@ namespace diziYorumSitesi
 {
 
 
-    public partial class Default
+    public partial class yorumLink
     {
 
         /// <summary>

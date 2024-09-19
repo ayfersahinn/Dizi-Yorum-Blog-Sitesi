@@ -26,6 +26,9 @@ namespace diziYorumSitesi
             var bloglar3 = db.TBL_BLOG.Take(5).ToList();
             Repeater3.DataSource = bloglar3;
             Repeater3.DataBind();
+            var yorumlar = db.TBL_YORUMLAR.Take(3).OrderByDescending(x => x.YORUMID).ToList();
+            Repeater4.DataSource = yorumlar;
+            Repeater4.DataBind();
         }
     }
 }
