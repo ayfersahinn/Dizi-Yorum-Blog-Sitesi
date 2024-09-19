@@ -137,7 +137,7 @@ ul, label {
         }
 
             .post-info h4 a:hover {
-                color: #4a5054;
+                color: #00AEFF;
             }
 
     .post-info p {
@@ -482,7 +482,7 @@ h5.post-author_head {
 
 ul.comment-list img {
     float: left;
-    width: 10%;
+    
     margin-right: 20px;
 }
 

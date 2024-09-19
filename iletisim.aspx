@@ -11,21 +11,23 @@
 Sizlerle her zaman bağlantıda olmak ve geri bildirimlerinizi duymak bizim için çok değerli. Aklınıza takılan sorular, paylaşmak istediğiniz öneriler ya da merak ettiğiniz konularla ilgili bizimle iletişime geçmekten çekinmeyin. Blog sayfamızda daha fazla içerik görmek istediğiniz konuları ya da geliştirmemizi düşündüğünüz alanları bizimle paylaşarak, bu platformu birlikte daha iyi hale getirebiliriz.
                 </p>
             </div>
-            <div class="contact-details">
+            <div class="">
                 <form runat="server">
-                    
-                        <asp:TextBox ID="txtAd" runat="server" placeholder="Kullanıcı adı" required=""></asp:TextBox>
-                           
-                         <asp:TextBox ID="txtMail" runat="server" placeholder="E-posta" required=""></asp:TextBox>
-                        
-                             <asp:TextBox ID="txtTel" runat="server" placeholder="Telefon" required=""></asp:TextBox>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <asp:TextBox ID="txtAd" runat="server" placeholder="Kullanıcı adı" CssClass="form-control mb-3" required=""></asp:TextBox>
 
-                           
-                            <asp:TextBox ID="txtKonu" runat="server" placeholder="Konu" required=""></asp:TextBox>
-                        
-                    
-                    <asp:TextBox ID="txtMesaj" runat="server" placeholder="Mesaj" TextMode="MultiLine" Height="150" required=""></asp:TextBox>
-                    <asp:Button ID="btnKaydet" runat="server" Text="Gönder" OnClick="btnKaydet_Click" />
+                            <asp:TextBox ID="txtMail" runat="server" placeholder="E-posta" required="" CssClass="form-control mb-3"></asp:TextBox>
+                        </div>
+                        <div class="col-md-6">
+                            <asp:TextBox ID="txtTel" runat="server" placeholder="Telefon" required="" CssClass="form-control mb-3"></asp:TextBox>
+
+                            <asp:TextBox ID="txtKonu" runat="server" placeholder="Konu" required="" CssClass="form-control mb-3"></asp:TextBox>
+                        </div>
+                    </div>
+
+                    <asp:TextBox ID="txtMesaj" runat="server" placeholder="Mesaj" TextMode="MultiLine" Height="150" required="" CssClass="form-control mb-3"></asp:TextBox>
+                    <asp:Button ID="btnKaydet" runat="server" Text="Gönder" CssClass="btn btn-secondary" OnClick="btnKaydet_Click" />
                 </form>
             </div>
             <div class="contact-details">
