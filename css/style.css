@@ -8,6 +8,7 @@ html, body{
     font-size: 100%;
 	background-size:cover;
 	font-family: 'Oswald', sans-serif;	
+	
 }
 body a{
 transition: 0.5s all ease;
@@ -110,7 +111,7 @@ margin-bottom:1em;
 }
 .post-info h4 a{
 font-size:1.7em;
-color:#00aeff;
+color:#00aeff ;
 margin-right:0.7em;
 display:inline-block;
 text-decoration:none;

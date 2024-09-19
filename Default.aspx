@@ -25,7 +25,7 @@
                     <ul>
                         <asp:Repeater ID="Repeater3" runat="server">
                             <ItemTemplate>
-                                <li><a href="#"><%# Eval("BLOGBASLIK")  %></a></li>
+                                <li><a href="blogLink.aspx?BLOGID=<%# Eval("BLOGID") %>"><%# Eval("BLOGBASLIK")  %></a></li>
 
                             </ItemTemplate>
                         </asp:Repeater>
@@ -55,14 +55,14 @@
                     <ul>
                         <asp:Repeater ID="Repeater2" runat="server">
                             <ItemTemplate>
-                                <li><a href="#"><%# Eval("KATAD")  %></a></li>
+                                <li><a href="kategoriDetay.aspx?KATID=<%# Eval("KATID") %>"><%# Eval("KATAD")%></a></li>
                             </ItemTemplate>
                         </asp:Repeater>
                     </ul>
                 </div>
-                <div class="clearfix"></div>
+               
             </div>
-            <div class="clearfix"></div>
+           
         </div>
     </div>
 </asp:Content>

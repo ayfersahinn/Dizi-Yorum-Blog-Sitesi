@@ -97,6 +97,7 @@
     </Content>
     <Content Include="images\avatar.png" />
     <Content Include="images\blog.png" />
+    <Content Include="images\clapperboard.png" />
     <Content Include="images\comment.png" />
     <Content Include="images\documentary.png" />
     <Content Include="images\food.jpg" />
@@ -120,6 +121,8 @@
     <Content Include="blogDetay.aspx" />
     <Content Include="hakkimizda.aspx" />
     <Content Include="iletisim.aspx" />
+    <Content Include="kategoriDetay.aspx" />
+    <Content Include="blogLink.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="admin\admin.Master.cs">
@@ -253,6 +256,20 @@
     </Compile>
     <Compile Include="iletisim.aspx.designer.cs">
       <DependentUpon>iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kategoriDetay.aspx.cs">
+      <DependentUpon>kategoriDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kategoriDetay.aspx.designer.cs">
+      <DependentUpon>kategoriDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="blogLink.aspx.cs">
+      <DependentUpon>blogLink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blogLink.aspx.designer.cs">
+      <DependentUpon>blogLink.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

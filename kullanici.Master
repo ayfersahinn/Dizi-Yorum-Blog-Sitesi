@@ -7,7 +7,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML>
-<html>
+<html >
 <head>
     <title>Personal Blog a Blogging Category Flat Bootstarp  Responsive Website Template | Home :: w3layouts</title>
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
@@ -38,12 +38,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!---->
 
 </head>
-<body>
+   
+<body >
+   
     <!---header---->
     <div class="header">
         <div class="container">
             <div class="logo">
-                <a href="index.html">
+                <a href="Default.aspx">
                     <img src="images/logo.jpg" title="" /></a>
             </div>
             <!---start-top-nav---->
@@ -62,7 +64,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     
                 </ul>
             </div>
-            <div class="clearfix"></div>
+            
+
             <script>
                 $("span.menu").click(function () {
                     $(".top-menu ul").slideToggle("slow", function () {
@@ -84,3 +87,5 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <p>Copyrights © 2024 Dizi Blog Tüm Hakları Saklıdır | Template by <a href="http://w3layouts.com/">W3layouts</a></p>
         </div>
     </div>
+</body>
+    </html>
