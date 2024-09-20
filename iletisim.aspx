@@ -27,7 +27,7 @@ Sizlerle her zaman bağlantıda olmak ve geri bildirimlerinizi duymak bizim içi
                     </div>
 
                     <asp:TextBox ID="txtMesaj" runat="server" placeholder="Mesaj" TextMode="MultiLine" Height="150" required="" CssClass="form-control mb-3"></asp:TextBox>
-                    <asp:Button ID="btnKaydet" runat="server" Text="Gönder" CssClass="btn btn-secondary" OnClick="btnKaydet_Click" />
+                    <asp:Button ID="btnKaydet" runat="server" Text="Gönder" CssClass="btn btn-outline-secondary" OnClick="btnKaydet_Click" />
                 </form>
             </div>
             <div class="contact-details">

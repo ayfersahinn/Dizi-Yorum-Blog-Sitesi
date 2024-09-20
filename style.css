@@ -130,7 +130,7 @@ ul, label {
             color: #4a5054;
             margin-right: 0.7em;
             display: inline-block;
-            text-decoration: none;
+            text-decoration: none !important;
             font-family: 'Oswald', sans-serif;
             font-weight: 400;
             text-transform: uppercase;

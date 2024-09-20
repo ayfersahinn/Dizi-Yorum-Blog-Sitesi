@@ -55,7 +55,7 @@
                         <asp:TextBox ID="txtMail" runat="server" placeholder="E-posta" CssClass="form-control" required=""></asp:TextBox><br />
                         <asp:TextBox ID="txtMesaj" runat="server" placeholder="Yorum yaz" CssClass="form-control" required="" TextMode="MultiLine" Height="100"></asp:TextBox>
                        <br />
-                        <asp:Button ID="btnYorum" runat="server" Text="Yorum Yap" CssClass="btn btn-secondary" OnClick="btnYorum_Click" />
+                        <asp:Button ID="btnYorum" runat="server" Text="Yorum Yap" CssClass="btn btn-outline-secondary" OnClick="btnYorum_Click" />
                     </form>
                 </div>
             </div>
