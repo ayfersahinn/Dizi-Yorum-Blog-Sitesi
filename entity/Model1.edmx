@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="diziYorumModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="diziYorumModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="TBL_BLOG">
           <Key>
             <PropertyRef Name="BLOGID" />
@@ -41,6 +41,16 @@
           </Key>
           <Property Name="KATID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="KATAD" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="TBL_KULLANICILAR">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KULLANICI" Type="nvarchar" MaxLength="30" />
+          <Property Name="EMAIL" Type="nvarchar" MaxLength="30" />
+          <Property Name="SIFRE" Type="nvarchar" MaxLength="30" />
+          <Property Name="ADMINMI" Type="bit" />
         </EntityType>
         <EntityType Name="TBL_TUR">
           <Key>
@@ -100,6 +110,7 @@
           <EntitySet Name="TBL_HAKKIMIZDA" EntityType="Self.TBL_HAKKIMIZDA" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBL_ILETISIM" EntityType="Self.TBL_ILETISIM" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBL_KATEGORI" EntityType="Self.TBL_KATEGORI" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBL_KULLANICILAR" EntityType="Self.TBL_KULLANICILAR" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBL_TUR" EntityType="Self.TBL_TUR" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBL_YORUMLAR" EntityType="Self.TBL_YORUMLAR" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_TBL_BLOG_TBL_KATEGORI" Association="Self.FK_TBL_BLOG_TBL_KATEGORI">
@@ -115,8 +126,7 @@
             <End Role="TBL_YORUMLAR" EntitySet="TBL_YORUMLAR" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="diziYorumModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -235,7 +245,18 @@
             <End Role="TBL_BLOG" EntitySet="TBL_BLOG" />
             <End Role="TBL_YORUMLAR" EntitySet="TBL_YORUMLAR" />
           </AssociationSet>
+          <EntitySet Name="TBL_KULLANICILAR" EntityType="diziYorumModel.TBL_KULLANICILAR" />
         </EntityContainer>
+        <EntityType Name="TBL_KULLANICILAR">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KULLANICI" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="EMAIL" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="SIFRE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="ADMINMI" Type="Boolean" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -299,6 +320,17 @@
                 <ScalarProperty Name="MAIL" ColumnName="MAIL" />
                 <ScalarProperty Name="YORUMICERIK" ColumnName="YORUMICERIK" />
                 <ScalarProperty Name="YORUMBLOG" ColumnName="YORUMBLOG" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBL_KULLANICILAR">
+            <EntityTypeMapping TypeName="diziYorumModel.TBL_KULLANICILAR">
+              <MappingFragment StoreEntitySet="TBL_KULLANICILAR">
+                <ScalarProperty Name="ADMINMI" ColumnName="ADMINMI" />
+                <ScalarProperty Name="SIFRE" ColumnName="SIFRE" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="KULLANICI" ColumnName="KULLANICI" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

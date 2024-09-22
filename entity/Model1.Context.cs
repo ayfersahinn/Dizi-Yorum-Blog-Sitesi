@@ -31,5 +31,6 @@ namespace diziYorumSitesi.entity
         public virtual DbSet<TBL_KATEGORI> TBL_KATEGORI { get; set; }
         public virtual DbSet<TBL_TUR> TBL_TUR { get; set; }
         public virtual DbSet<TBL_YORUMLAR> TBL_YORUMLAR { get; set; }
+        public virtual DbSet<TBL_KULLANICILAR> TBL_KULLANICILAR { get; set; }
     }
 }

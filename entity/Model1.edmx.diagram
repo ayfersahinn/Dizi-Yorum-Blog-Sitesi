@@ -14,6 +14,7 @@
         <AssociationConnector Association="diziYorumModel.FK_TBL_BLOG_TBL_KATEGORI" ManuallyRouted="false" />
         <AssociationConnector Association="diziYorumModel.FK_TBL_BLOG_TBL_TUR" ManuallyRouted="false" />
         <AssociationConnector Association="diziYorumModel.FK_TBL_YORUMLAR_TBL_BLOG" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="diziYorumModel.TBL_KULLANICILAR" Width="1.5" PointX="3.375" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

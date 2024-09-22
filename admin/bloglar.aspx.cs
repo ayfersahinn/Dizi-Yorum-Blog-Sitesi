@@ -13,6 +13,11 @@ namespace diziYorumSitesi.admin
         diziYorumEntities db = new diziYorumEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["KULLANICI"] == null)
+            {
+                Response.Redirect("~/login.aspx");
+            }
+            
             var blogs = (from x in db.TBL_BLOG select new {x.BLOGID, x.BLOGBASLIK, x.BLOGTARIH, x.TBL_TUR.TURAD, x.TBL_KATEGORI.KATAD}).ToList();
             Repeater1.DataSource = blogs;
             Repeater1.DataBind();
