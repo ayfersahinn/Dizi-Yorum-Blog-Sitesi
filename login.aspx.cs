@@ -24,11 +24,12 @@ namespace diziYorumSitesi
             {
                 if (sorgu2.Any())
                 {
-                    Session.Add("KULLANICI", txtEmail);
+                    Session.Add("ADMIN", txtEmail);
                     Response.Redirect("admin/istatistik.aspx");
                 }
                 else
                 {
+                    Session.Add("KULLANICI", txtEmail);
                     Response.Redirect("Default.aspx");
 
                 }

@@ -18,7 +18,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav w-100">
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="/admin/istatistik.aspx">Anasayfa</a>
                     </li>
@@ -34,6 +34,22 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Hakkımızda</a>
                     </li>
+                    <asp:PlaceHolder ID="loggedIn" runat="server">
+                        <li class="nav-item dropdown ms-auto">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profilim
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Ayarlar</a></li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="adminCikis.aspx">Çıkış Yap</a></li>
+                            </ul>
+                        </li>
+                    </asp:PlaceHolder>
+                  
+
                 </ul>
             </div>
         </div>

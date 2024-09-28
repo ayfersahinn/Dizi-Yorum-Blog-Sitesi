@@ -41,22 +41,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body>
-   
+
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
             <a class="navbar-brand" href="Default.aspx">
                 <img src="images/clapperboard.png" alt="..." height="40">
             </a>
-              <h5 class="text-light nav-link ">Sahne Arası</h5>
+            <h5 class="text-light nav-link ">Sahne Arası</h5>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav d-flex align-items-center">
-                    <%--<li class="nav-item">
-                      
-                    </li>--%>
+                <ul class="navbar-nav w-100 d-flex align-items-center">
+                   
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="Default.aspx">Anasayfa</a>
                     </li>
@@ -66,6 +64,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <li class="nav-item">
                         <a class="nav-link" href="iletisim.aspx">İletişim</a>
                     </li>
+                    <asp:PlaceHolder ID="loggedIn" runat="server">
+                        <li class="nav-item dropdown ms-auto">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profilim
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Ayarlar</a></li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="cikisYap.aspx">Çıkış Yap</a></li>
+                            </ul>
+                        </li>
+                    </asp:PlaceHolder>
+                   <%-- kullanıcı giriş yapmamışsa aşağıdaki link item görünecek--%>
+                    <asp:PlaceHolder ID="normal" runat="server">
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="login.aspx">Giriş Yap</a>
+                        </li>
+                    </asp:PlaceHolder>
                 </ul>
             </div>
         </div>
