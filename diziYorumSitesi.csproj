@@ -81,6 +81,7 @@
     <Content Include="admin\blogGuncelle.aspx" />
     <Content Include="admin\istatistik.aspx" />
     <Content Include="admin\adminCikis.aspx" />
+    <Content Include="admin\adminMesaj.aspx" />
     <Content Include="admin\yorumGuncelle.aspx" />
     <Content Include="admin\yorumSil.aspx" />
     <Content Include="admin\yorumlar.aspx" />
@@ -208,6 +209,13 @@
     </Compile>
     <Compile Include="admin\adminCikis.aspx.designer.cs">
       <DependentUpon>adminCikis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminMesaj.aspx.cs">
+      <DependentUpon>adminMesaj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminMesaj.aspx.designer.cs">
+      <DependentUpon>adminMesaj.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\yorumGuncelle.aspx.cs">
       <DependentUpon>yorumGuncelle.aspx</DependentUpon>

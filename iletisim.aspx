@@ -5,7 +5,7 @@
         <div class="container">
             <div class="contact-info">
                 <h2 style="color: #4a5054;">İLETİŞİM</h2>
-                <p>
+                <p style="text-align:justify">
                     Merhaba ve hoş geldiniz!
 
 Sizlerle her zaman bağlantıda olmak ve geri bildirimlerinizi duymak bizim için çok değerli. Aklınıza takılan sorular, paylaşmak istediğiniz öneriler ya da merak ettiğiniz konularla ilgili bizimle iletişime geçmekten çekinmeyin. Blog sayfamızda daha fazla içerik görmek istediğiniz konuları ya da geliştirmemizi düşündüğünüz alanları bizimle paylaşarak, bu platformu birlikte daha iyi hale getirebiliriz.

@@ -2,45 +2,25 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="about-content">
 	 <div class="container">
-		 <h2>Something About Me and Blogging</h2>
-		 <div class="about-section">
+		
+		 <div class="about-section" style="text-align: justify;">
 			 <div class="about-grid">
-				 <h3>WHY I STARTED THIS BLOG?</h3>
-				 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-				 It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-				 versions of Lorem Ipsum.</p>
-				 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages 
-				 and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+				 <h3>Neden Bu Blog Sitesini Kurduk?</h3>
+				 <p>Sinemanın büyülü dünyasına ve görsel hikaye anlatımının gücüne olan tutkumuzla bu platformu kurduk. Dizilerden filmlere, belgesellerden animasyonlara kadar geniş bir yelpazede içerikleri keşfetmek, analiz etmek ve paylaşımlar yapmak amacıyla yola çıktık. Amacımız, sinema severlerin ortak bir buluşma noktası oluşturması ve içeriklerin derinliklerine inerek her türün keyfini daha da artırmak.
+
+Sitemizi kurarken, sanatın her dalına olan ilgimizi ve bilgi birikimimizi sizlerle paylaşmak, aynı zamanda sizden gelecek yorumlar ve katkılarla bu platformu büyütmek istedik. Dizi, film ve belgesel tutkunları için güvenilir bir rehber ve eğlenceli bir topluluk yaratmak hayalimizdi. Bu hayali gerçekleştirmek için buradayız ve birlikte daha da ileriye gitmeyi amaçlıyoruz.</p>
+				 
 			 </div>
 			 <div class="about-grid2">
-				 <h3>WHY YOU SHOULD READ THIS BLOG?</h3>
-				 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-				 It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-				 versions of Lorem Ipsum.</p>	
-				 <ul>
-					 <li><a href="#">Always free from repetition</a></li>
-					 <li><a href="#">Vestibulum rhoncus nibh quis dui fermentum iaculis.</a></li>
-					 <li><a href="#">The standard chunk of Lorem Ipsum</a></li>
-					 <li><a href="#">In consequat dolor in lorem egestas ultrices.</a></li>
-					 <li><a href="#">Ultrices rhoncus nibh quis dui.</a></li>
-				 </ul>	
+				 <h3>Neden Bu Blogları Okumalısınız?</h3>
+				 <p>Film, dizi, belgesel ve animasyon dünyası her geçen gün büyüyor ve çeşitleniyor. Bir izleyici olarak bu kadar fazla seçenek arasından en iyilerini bulmak her zaman kolay olmayabilir. İşte tam da bu noktada bloglarımız devreye giriyor. Biz, içeriklerin sadece yüzeyine değil, derinliklerine iniyoruz.
+
+Bloglarımızı okuduğunuzda sadece bir yapımın konusunu öğrenmekle kalmayacaksınız. Aynı zamanda o yapımın arka planındaki detayları, yönetmenin vizyonunu, senaryonun alt metinlerini ve oyuncuların performanslarını da analiz edeceğiz. Bu sayede bir izleyici olmanın ötesine geçip, izlediklerinizi daha anlamlı ve tatmin edici bir şekilde deneyimleme şansı bulacaksınız.
+
+Ayrıca, içerik önerileri, incelemeler, eleştiriler ve yeni yapımlar hakkında güncel bilgilerle izleme alışkanlıklarınıza yeni bir boyut katacağız. Siz de keşfetmekten keyif alıyorsanız, bu bloglar tam size göre!</p>	
+				
 			 </div>
-			 <div class="who-iam">
-				 <h3>WHO THE IAM?</h3>
-				 <div class="man-info">
-					 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
-				     <h4>Some facts about me.</h4>  
-					 <li>Nullam at turpis a orci pretium pharetra.</li>
-					 <li>Curabitur tincidunt purus mollis facilisis placerat.</li>
-					 <li>Mauris a nulla ac est tincidunt interdum.</li>
-					 <li>Pellentesque vel enim nec urna imperdiet mollis.</li>
-					 <li>Integer interdum risus et scelerisque volutpat.</li>
-				 </div>
-				 <div class="man-pic">
-				 <img src="images/man.jpg" alt=""/>
-				 </div>
-				 <div class="clearfix"></div>
-			 </div>			 
+					 
 		  </div>		 
 	  </div>
 </div>
