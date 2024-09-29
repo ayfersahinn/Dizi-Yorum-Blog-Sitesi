@@ -24,12 +24,13 @@ namespace diziYorumSitesi
             {
                 if (sorgu2.Any())
                 {
-                    Session.Add("ADMIN", txtEmail);
+                    Session.Add("ADMIN", txtEmail.Text);
+                    // Label1.Text = "Session değeri: " + Session["ADMIN"]?.ToString();
                     Response.Redirect("admin/istatistik.aspx");
                 }
                 else
                 {
-                    Session.Add("KULLANICI", txtEmail);
+                    Session.Add("KULLANICI", txtEmail.Text);
                     Response.Redirect("Default.aspx");
 
                 }

@@ -82,6 +82,7 @@
     <Content Include="admin\istatistik.aspx" />
     <Content Include="admin\adminCikis.aspx" />
     <Content Include="admin\adminMesaj.aspx" />
+    <Content Include="admin\adminProfil.aspx" />
     <Content Include="admin\yorumGuncelle.aspx" />
     <Content Include="admin\yorumSil.aspx" />
     <Content Include="admin\yorumlar.aspx" />
@@ -158,6 +159,7 @@
     <Content Include="kategoriDetay.aspx" />
     <Content Include="blogLink.aspx" />
     <Content Include="cikisYap.aspx" />
+    <Content Include="kullaniciProfil.aspx" />
     <Content Include="yorumLink.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -216,6 +218,13 @@
     </Compile>
     <Compile Include="admin\adminMesaj.aspx.designer.cs">
       <DependentUpon>adminMesaj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminProfil.aspx.cs">
+      <DependentUpon>adminProfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminProfil.aspx.designer.cs">
+      <DependentUpon>adminProfil.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\yorumGuncelle.aspx.cs">
       <DependentUpon>yorumGuncelle.aspx</DependentUpon>
@@ -351,6 +360,13 @@
     </Compile>
     <Compile Include="cikisYap.aspx.designer.cs">
       <DependentUpon>cikisYap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullaniciProfil.aspx.cs">
+      <DependentUpon>kullaniciProfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullaniciProfil.aspx.designer.cs">
+      <DependentUpon>kullaniciProfil.aspx</DependentUpon>
     </Compile>
     <Compile Include="yorumLink.aspx.cs">
       <DependentUpon>yorumLink.aspx</DependentUpon>
