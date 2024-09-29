@@ -48,6 +48,7 @@
                         </ul>
                     </ItemTemplate>
                 </asp:Repeater>
+                <asp:PlaceHolder ID="yorum" runat="server">
                 <div class="">
                     <h3 style="color:#4a5054;">Yorum Yap</h3><br />
                     <form runat="server">
@@ -58,6 +59,7 @@
                         <asp:Button ID="btnYorum" runat="server" Text="Yorum Yap" CssClass="btn btn-outline-secondary" OnClick="btnYorum_Click" />
                     </form>
                 </div>
+                    </asp:PlaceHolder>
             </div>
         </div>
     </div>

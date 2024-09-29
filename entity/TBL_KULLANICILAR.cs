@@ -19,5 +19,6 @@ namespace diziYorumSitesi.entity
         public string EMAIL { get; set; }
         public string SIFRE { get; set; }
         public Nullable<bool> ADMINMI { get; set; }
+        public string FOTO { get; set; }
     }
 }

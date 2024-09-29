@@ -102,6 +102,7 @@
     <Content Include="images\blog.png" />
     <Content Include="images\clapperboard.png" />
     <Content Include="images\comment.png" />
+    <Content Include="images\delete.png" />
     <Content Include="images\documentary.png" />
     <Content Include="images\food.jpg" />
     <Content Include="images\icon3.png" />
@@ -109,9 +110,11 @@
     <Content Include="images\man.jpg" />
     <Content Include="images\more.png" />
     <Content Include="images\movie.png" />
+    <Content Include="images\pen.png" />
     <Content Include="images\post1.jpg" />
     <Content Include="images\post2.jpg" />
     <Content Include="images\post3.jpg" />
+    <Content Include="images\profil.png" />
     <Content Include="images\search.png" />
     <Content Include="images\text.png" />
     <Content Include="images\tv.png" />
@@ -471,6 +474,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Uploads\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

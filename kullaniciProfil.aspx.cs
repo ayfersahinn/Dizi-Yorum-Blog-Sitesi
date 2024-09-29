@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -22,7 +23,8 @@ namespace diziYorumSitesi
                     //Label1.Text = "Session değeri: " + Session["ADMIN"].ToString();
                     txtAd.Text = user.KULLANICI;
                     txtMail.Text = user.EMAIL;
-
+                    string userPhoto = string.IsNullOrEmpty(user.FOTO) ? "~/images/profil.png" : user.FOTO;
+                    imgProfil.ImageUrl = userPhoto; // <asp:Image> kontrolünde kullanmak için
 
                 }
                 else
@@ -70,7 +72,53 @@ namespace diziYorumSitesi
                 Label1.ForeColor = System.Drawing.Color.Red;
 
             }
-        
-    }
+
+        }
+
+
+        protected void upload_Click(object sender, EventArgs e)
+        {
+            string currentUserEmail = Session["KULLANICI"].ToString();
+            var user = db.TBL_KULLANICILAR.Where(x => x.EMAIL == currentUserEmail).FirstOrDefault();
+            if (user != null)
+            {
+                if (fileUpload.HasFile)
+                {
+
+                    // Yüklenen dosyayı al ve sunucuda kaydet
+                    string fileName = Path.GetFileName(fileUpload.FileName);
+                    string filePath = Server.MapPath("~/Uploads/" + fileName);
+                    fileUpload.SaveAs(filePath);
+                    user.FOTO = "~/Uploads/" + fileName;
+                    db.SaveChanges();
+                    Label2.Text = "Dosya başarıyla yüklendi!";
+                    Label2.ForeColor = System.Drawing.Color.Green;
+                    Response.Redirect(Request.RawUrl);
+
+
+                }
+                else
+                {
+                    Label2.Text = "Lütfen bir dosya seçin.";
+                    Label2.ForeColor = System.Drawing.Color.Red;
+                }
+            }
+
+        }
+
+        protected void btnSil_Click(object sender, ImageClickEventArgs e)
+        {
+            string currentUserEmail = Session["KULLANICI"].ToString();
+            var user = db.TBL_KULLANICILAR.Where(x => x.EMAIL == currentUserEmail).FirstOrDefault();
+            if (user != null)
+            {
+                user.FOTO = "images/profil.png";
+
+                db.SaveChanges();
+
+                Response.Redirect(Request.RawUrl);
+
+            }
+        }
     }
 }

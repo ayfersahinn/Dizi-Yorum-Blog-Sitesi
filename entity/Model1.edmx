@@ -51,6 +51,7 @@
           <Property Name="EMAIL" Type="nvarchar" MaxLength="30" />
           <Property Name="SIFRE" Type="nvarchar" MaxLength="30" />
           <Property Name="ADMINMI" Type="bit" />
+          <Property Name="FOTO" Type="nvarchar" MaxLength="250" />
         </EntityType>
         <EntityType Name="TBL_TUR">
           <Key>
@@ -256,6 +257,7 @@
           <Property Name="EMAIL" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="SIFRE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="ADMINMI" Type="Boolean" />
+          <Property Name="FOTO" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -326,6 +328,7 @@
           <EntitySetMapping Name="TBL_KULLANICILAR">
             <EntityTypeMapping TypeName="diziYorumModel.TBL_KULLANICILAR">
               <MappingFragment StoreEntitySet="TBL_KULLANICILAR">
+                <ScalarProperty Name="FOTO" ColumnName="FOTO" />
                 <ScalarProperty Name="ADMINMI" ColumnName="ADMINMI" />
                 <ScalarProperty Name="SIFRE" ColumnName="SIFRE" />
                 <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />

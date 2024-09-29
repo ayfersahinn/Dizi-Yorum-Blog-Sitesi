@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using diziYorumSitesi.entity;
+using Microsoft.SqlServer.Server;
 
 namespace diziYorumSitesi
 {
@@ -22,10 +23,24 @@ namespace diziYorumSitesi
             var yorumlar = db.TBL_YORUMLAR.Where(x=> x.YORUMBLOG == id).ToList();
             Repeater2.DataSource = yorumlar;
             Repeater2.DataBind();
+            if (!IsPostBack)
+            {
+                if (Session["KULLANICI"] != null) // Kullanıcı giriş yapmışsa
+                {
+                    yorum.Visible = true; 
+                    
+                }
+                else
+                {
+                    yorum.Visible = false; 
+                   
+                }
+            }
         }
 
         protected void btnYorum_Click(object sender, EventArgs e)
         {
+
             int id = Convert.ToInt32(Request.QueryString["BLOGID"]);
             TBL_YORUMLAR y = new TBL_YORUMLAR();
             y.KULLANICIADI = txtAd.Text;
