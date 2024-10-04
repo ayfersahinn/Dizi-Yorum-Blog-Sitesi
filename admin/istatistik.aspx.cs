@@ -12,6 +12,10 @@ namespace diziYorumSitesi.admin
         diziYorumEntities db = new diziYorumEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["ADMIN"] == null)
+            {
+                Response.Redirect("~/login.aspx");
+            }
             Label1.Text = db.TBL_BLOG.Count().ToString();
             Label2.Text = db.TBL_YORUMLAR.Count().ToString();
             Label3.Text = db.TBL_BLOG.Where(x=> x.BLOGTUR==2).Count().ToString();

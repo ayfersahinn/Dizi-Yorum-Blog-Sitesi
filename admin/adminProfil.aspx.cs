@@ -12,6 +12,10 @@ namespace diziYorumSitesi.admin
         diziYorumEntities db = new diziYorumEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["ADMIN"] == null)
+            {
+                Response.Redirect("~/login.aspx");
+            }
             if (!IsPostBack)
             {
                 string currentUserEmail = Session["ADMIN"].ToString();

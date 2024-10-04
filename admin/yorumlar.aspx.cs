@@ -12,6 +12,10 @@ namespace diziYorumSitesi.admin
         diziYorumEntities db = new diziYorumEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["ADMIN"] == null)
+            {
+                Response.Redirect("~/login.aspx");
+            }
             var yorumlar = (from x in db.TBL_YORUMLAR select new {x.YORUMID, x.KULLANICIADI,x.YORUMICERIK, x.TBL_BLOG.BLOGBASLIK}).ToList();
             Repeater1.DataSource = yorumlar;
             Repeater1.DataBind();

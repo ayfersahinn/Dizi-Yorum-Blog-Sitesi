@@ -13,6 +13,10 @@ namespace diziYorumSitesi
         diziYorumEntities db = new diziYorumEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["KULLANICI"] == null)
+            {
+                Response.Redirect("~/login.aspx");
+            }
             if (!IsPostBack)
             {
                 string currentUserEmail = Session["KULLANICI"].ToString();

@@ -12,6 +12,10 @@ namespace diziYorumSitesi.admin
         diziYorumEntities db = new diziYorumEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["ADMIN"] == null)
+            {
+                Response.Redirect("~/login.aspx");
+            }
             int yorumId = Convert.ToInt32(Request.QueryString["YORUMID"]);
             var yorum = db.TBL_YORUMLAR.Find(yorumId);
             db.TBL_YORUMLAR.Remove(yorum);

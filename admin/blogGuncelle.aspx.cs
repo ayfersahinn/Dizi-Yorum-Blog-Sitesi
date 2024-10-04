@@ -12,7 +12,10 @@ namespace diziYorumSitesi.admin
         diziYorumEntities db = new diziYorumEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (Session["ADMIN"] == null)
+            {
+                Response.Redirect("~/login.aspx");
+            }
             int y = Convert.ToInt32(Request.QueryString["BLOGID"]);
 
             if (!IsPostBack)

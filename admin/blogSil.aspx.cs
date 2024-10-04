@@ -12,6 +12,10 @@ namespace diziYorumSitesi.admin
         diziYorumEntities db = new diziYorumEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["ADMIN"] == null)
+            {
+                Response.Redirect("~/login.aspx");
+            }
             int x = Convert.ToInt32(Request.QueryString["BLOGID"]);
             var blog = db.TBL_BLOG.Find(x);
             db.TBL_BLOG.Remove(blog);

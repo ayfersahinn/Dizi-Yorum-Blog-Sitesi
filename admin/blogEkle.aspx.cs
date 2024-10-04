@@ -12,6 +12,10 @@ namespace diziYorumSitesi.admin
         diziYorumEntities db = new diziYorumEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["ADMIN"] == null)
+            {
+                Response.Redirect("~/login.aspx");
+            }
             if (!IsPostBack)
             {
                 var turler = (from x in db.TBL_TUR select new { x.TURAD, x.TURID }).ToList();

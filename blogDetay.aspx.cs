@@ -15,6 +15,7 @@ namespace diziYorumSitesi
         diziYorumEntities db = new diziYorumEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
+
             int id = Convert.ToInt32(Request.QueryString["BLOGID"]);
             var blog = db.TBL_BLOG.Where(x => x.BLOGID == id).ToList();
             Repeater1.DataSource = blog;
